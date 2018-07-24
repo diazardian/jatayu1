@@ -5,7 +5,13 @@
 @section('home')
     <!--========== SLIDER ==========-->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <div class="container"></div>
+        <div class="container">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+        </div>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -30,6 +36,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <!--========== SLIDER ==========-->
 
     <!--========== PAGE LAYOUT ==========-->

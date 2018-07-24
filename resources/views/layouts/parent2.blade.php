@@ -70,7 +70,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.html">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-item-child nav-item-hover @if(Route::currentRouteName() == 'contact') active @endif" href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -86,28 +86,25 @@
 @yield('serv2')
 @yield('serv3')
 @yield('serv4')
-
+@yield('contact')
 <!--========== FOOTER ==========-->
 <footer class="footer">
     <!-- Links -->
     <div class="footer-seperator">
-        <div class="content-lg container">
+        <div class="content-sm container">
             <div class="row">
-                <div class="col-sm-2 sm-margin-b-50">
+                <div class="col-sm-2 sm-margin-b-50 content">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
                         <li class="footer-list-item"><a class="footer-list-link" href="#">Home</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="#">About</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="#">Products</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Pricing</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="#">Contact</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Terms</a></li>
                     </ul>
                     <!-- End List -->
                 </div>
-                <div class="col-sm-4 sm-margin-b-30">
+                <div class="col-sm-4 sm-margin-b-30 content">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
                         <li class="footer-list-item"><a class="footer-list-link" href="#">Twitter</a></li>
@@ -117,13 +114,16 @@
                     </ul>
                     <!-- End List -->
                 </div>
-                <div class="col-sm-5 sm-margin-b-30">
-                    <h2 class="color-white">Send Us A Note</h2>
-                    <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" required>
-                    <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
-                    <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required>
-                    <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
-                    <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                <div class="col-sm-2 content">
+                    <img class="img-responsive" src="{{asset('img/logowhite.png')}}" alt="Our Office">
+                </div>
+                <div class="col-sm-4 sm-margin-b-30 content-md" style="font-size: 20px">
+                    <address style="color: #ffffff">
+                        <strong>Jatayu Corp.</strong><br>
+                        Intiland Tower 9th Floor<br>
+                        Panglima Sudirman No.101-103, Surabaya<br>
+                        <abbr title="Phone">P:</abbr> +6231-547-771
+                    </address>
                 </div>
             </div>
             <!--// end row -->
@@ -168,9 +168,12 @@
 
 <!-- PAGE LEVEL SCRIPTS -->
 <script src="{{asset('js/layout.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('js/components/maps.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/components/wow.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/components/swiper.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/components/masonry.min.js')}}" type="text/javascript"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVfdVQqnx9wPueW_jzovNd4VusGeSCax0&callback=initMap"
+        type="text/javascript"></script>
 </body>
 <!-- END BODY -->
 </html>

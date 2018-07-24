@@ -43,3 +43,8 @@ Route::get('serv4', [
     'uses' => 'TestController@serv4',
     'as' => 'serv4'
 ]);
+
+Route::get('contact', [
+    'uses' => 'TestController@contact',
+    'as' => 'contact'
+]);

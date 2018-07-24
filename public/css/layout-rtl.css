@@ -945,6 +945,9 @@ fieldset[disabled] .btn-theme {
   margin-right: 20px !important;
 }
 
+.margin-l-25 {
+  margin-left: 25px; !important;
+}
 /*------------------------------------------------------------------
     [Right margin]
 ------------------------------------------------------------------*/

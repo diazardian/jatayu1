@@ -36,4 +36,8 @@ class TestController extends Controller
     {
         return view('serv4');
     }
+
+    public function contact() {
+        return view('contact');
+    }
 }
