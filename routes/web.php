@@ -48,3 +48,8 @@ Route::get('contact', [
     'uses' => 'TestController@contact',
     'as' => 'contact'
 ]);
+
+Route::get('portofolio', [
+    'uses' => 'TestController@portofolio',
+    'as' => 'portofolio'
+]);

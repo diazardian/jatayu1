@@ -26,7 +26,6 @@
                             <div class="service-info">
                                 <h3 style="text-align: center">Networking <br> Hardware</h3>
                             </div>
-                            <a href="#" class="content-wrapper-link"></a>
                         </div>
                     </div>
                 </div>
@@ -39,7 +38,6 @@
                             <div class="service-info">
                                 <h3 style="text-align: center">System <br> Integration</h3>
                             </div>
-                            <a href="#" class="content-wrapper-link"></a>
                         </div>
                     </div>
                 </div>

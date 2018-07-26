@@ -40,4 +40,8 @@ class TestController extends Controller
     public function contact() {
         return view('contact');
     }
+
+    public function portofolio() {
+        return view('portofolio');
+    }
 }

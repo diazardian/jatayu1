@@ -43,7 +43,7 @@
 
                 <!-- Logo -->
                 <div class="logo">
-                    <a class="logo-wrap" href="{{ route('home')}}}">
+                    <a class="logo-wrap" href="{{ route('home')}}">
                         <img class="logo-img logo-img-main" src="{{asset('img/logologo.png')}}" alt="Asentus Logo">
                         <img class="logo-img logo-img-active" src="{{asset('img/logoblack.png')}}" alt="Asentus Logo">
                     </a>
@@ -69,7 +69,7 @@
                                 <li><a href="{{ route('serv4') }}">Brand & Tech Development</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-item-child nav-item-hover @if(Route::currentRouteName() == 'portofolio') active @endif" href="{{ route('portofolio') }}">Portofolio</a></li>
                         <li class="nav-item"><a class="nav-item-child nav-item-hover @if(Route::currentRouteName() == 'contact') active @endif" href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>
@@ -87,6 +87,7 @@
 @yield('serv3')
 @yield('serv4')
 @yield('contact')
+@yield('porto')
 <!--========== FOOTER ==========-->
 <footer class="footer">
     <!-- Links -->
@@ -172,7 +173,7 @@
 <script src="{{asset('js/components/wow.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/components/swiper.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/components/masonry.min.js')}}" type="text/javascript"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVfdVQqnx9wPueW_jzovNd4VusGeSCax0&callback=initMap"
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDurjpNTU8n1eGaY73QA-SEjIAPOtiaGsQ&callback=initMap"
         type="text/javascript"></script>
 </body>
 <!-- END BODY -->

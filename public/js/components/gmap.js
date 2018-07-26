@@ -30,7 +30,7 @@ window.initMap = function() {
 
   var customMapTypeId = 'custom_style';
 
-  var jatayu = {lat: -7.272757, lng: 112.743058};
+  var brooklyn = {lat: 41.850, lng: -73.961};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 6,
     scrollwheel: false,
@@ -45,9 +45,9 @@ window.initMap = function() {
   var contentString = '<div id="content">'+
     '<div id="siteNotice">'+
     '</div>'+
-    '<h1 id="firstHeading" class="firstHeading">Jatayu Corp</h1>'+
+    '<h1 id="firstHeading" class="firstHeading">Brooklyn</h1>'+
     '<div id="bodyContent">'+
-    '<p>101-103 Intiland Tower 9th Floor, <br> Surabaya, <br> Indonesia</p>'+
+    '<p>277 Bedford Avenue, <br> Brooklyn, NY 11211, <br> New York, USA</p>'+
     '</div>'+
     '</div>';
 
@@ -60,8 +60,8 @@ window.initMap = function() {
     map: map,
     clickable: true,
     icon: image,
-    title: 'Jatayu',
-    position: jatayu
+    title: 'Brooklyn',
+    position: brooklyn
   });
 
   marker.addListener('click', function() {
