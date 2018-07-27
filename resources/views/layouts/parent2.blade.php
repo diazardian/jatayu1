@@ -88,6 +88,7 @@
 @yield('serv4')
 @yield('contact')
 @yield('porto')
+@yield('blog')
 <!--========== FOOTER ==========-->
 <footer class="footer">
     <!-- Links -->

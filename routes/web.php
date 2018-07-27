@@ -54,6 +54,11 @@ Route::get('portofolio', [
     'as' => 'portofolio'
 ]);
 
+Route::get('blog', [
+    'uses' => 'TestController@blog',
+    'as' => 'blog'
+]);
+
 //Admin
 
 Route::get('admin', [

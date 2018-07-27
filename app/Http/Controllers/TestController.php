@@ -45,6 +45,10 @@ class TestController extends Controller
         return view('portofolio');
     }
 
+    public function blog() {
+        return view('blog');
+    }
+
 //    admin
 
     public function login() {
