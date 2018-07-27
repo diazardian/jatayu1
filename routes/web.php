@@ -53,3 +53,25 @@ Route::get('portofolio', [
     'uses' => 'TestController@portofolio',
     'as' => 'portofolio'
 ]);
+
+//Admin
+
+Route::get('admin', [
+    'uses' => 'TestController@login',
+    'as' => 'login.admin'
+]);
+
+Route::get('reg', [
+    'uses' => 'TestController@reg',
+    'as' => 'reg.admin'
+]);
+
+Route::get('fgtpwd', [
+    'uses' => 'TestController@forgot',
+    'as' => 'forgot.admin'
+]);
+
+Route::get('dasbor', [
+    'uses' => 'TestController@dasbor',
+    'as' => 'dasbor.admin'
+]);

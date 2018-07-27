@@ -44,4 +44,22 @@ class TestController extends Controller
     public function portofolio() {
         return view('portofolio');
     }
+
+//    admin
+
+    public function login() {
+        return view('admin.login');
+    }
+
+    public function reg() {
+        return view('admin.reg');
+    }
+
+    public function forgot() {
+        return view('admin.forgot');
+    }
+
+    public function dasbor() {
+        return view('admin.dasbor');
+    }
 }

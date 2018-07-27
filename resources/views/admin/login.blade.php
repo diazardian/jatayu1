@@ -1,29 +1,8 @@
+@extends('layouts.loginpar')
 
-<!DOCTYPE html>
-<html lang="en">
+@section('title', 'Jatayu-Admin')
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>SB Admin - Login</title>
-
-    <!-- Bootstrap core CSS-->
-    <link href="{{ asset('aset-admin/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <!-- Custom fonts for this template-->
-    <link href="{{ asset('aset-admin/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template-->
-    <link href="{{ asset('aset-admin/css/sb-admin.css') }}" rel="stylesheet">
-
-</head>
-
-<body class="bg-dark">
+@section('content')
 
 <div class="container">
     <div class="card card-login mx-auto mt-5">
@@ -50,23 +29,13 @@
                         </label>
                     </div>
                 </div>
-                <a class="btn btn-primary btn-block" href="index.html">Login</a>
+                <a class="btn btn-primary btn-block" href="{{ route('dasbor.admin') }}">Login</a>
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="register.html">Register an Account</a>
-                <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+                <a class="d-block small" href="{{ route('forgot.admin') }}">Forgot Password?</a>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Bootstrap core JavaScript-->
-<script src="{{ asset('aset-admin/vendor/jquery/jquery.min.js') }}"></script>
-<script src="{{ asset('aset-admin/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
-<!-- Core plugin JavaScript-->
-<script src="{{ asset('aset-admin/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
-
-</body>
-
-</html>
+@endsection
