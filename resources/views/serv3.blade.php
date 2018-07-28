@@ -47,7 +47,7 @@
                 <div class="col-sm-1"></div>
                 <div class="col-sm-5 sm-margin-b-50">
                     <div class="margin-b-30">
-                        <img src="{{asset('img/640x380/01.jpg')}}">
+                        <img src="{{asset('img/640x380/manser.png')}}">
                     </div>
                 </div>
             </div>

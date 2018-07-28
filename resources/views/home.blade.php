@@ -9,7 +9,7 @@
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                {{--<li data-target="#carousel-example-generic" data-slide-to="1"></li>--}}
             </ol>
         </div>
 
@@ -25,16 +25,16 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <img class="img-responsive" src="{{ asset('img/1920x1080/01.jpg') }}" alt="Slider Image">
-                <div class="container">
-                    <div class="carousel-centered">
-                        <div class="margin-b-40">
-                            <h2 class="carousel-title">Jatayu</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {{--<div class="item">--}}
+                {{--<img class="img-responsive" src="{{ asset('img/1920x1080/01.jpg') }}" alt="Slider Image">--}}
+                {{--<div class="container">--}}
+                    {{--<div class="carousel-centered">--}}
+                        {{--<div class="margin-b-40">--}}
+                            {{--<h2 class="carousel-title">Jatayu</h2>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
     </div>
         <!--========== SLIDER ==========-->
@@ -156,7 +156,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-sm-offset-1">
-                    <img class="img-responsive" src="img/640x380/01.jpg" alt="Our Office">
+                    <img class="img-responsive" src="{{ asset('img/640x380/networkinfra.png') }}" alt="Our Office">
                 </div>
             </div>
         </div>
@@ -168,7 +168,7 @@
         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-0">
-                    <img class="img-responsive" src="img/640x380/01.jpg" alt="Our Office">
+                    <img class="img-responsive" src="{{ asset('img/640x380/intsol.png') }}" alt="Our Office">
                 </div>
                 <div class="col-sm-1"></div>
                 <div class=" col-sm-7 text-right">
@@ -193,7 +193,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4 col-sm-offset-1">
-                    <img class="img-responsive" src="img/640x380/01.jpg" alt="Our Office">
+                    <img class="img-responsive" src="{{ asset('img/640x380/manser.png') }}" alt="Our Office">
                 </div>
             </div>
         </div>
@@ -205,7 +205,7 @@
         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-0">
-                    <img class="img-responsive" src="img/640x380/01.jpg" alt="Our Office">
+                    <img class="img-responsive" src="{{ asset('img/640x380/bnd.png') }}" alt="Our Office">
                 </div>
                 <div class="col-sm-1"></div>
                 <div class="col-sm-7 sm-margin-b-50 text-right">
@@ -221,61 +221,62 @@
     <!-- 4 -->
     <!-- End Service -->
 
-    <!-- Latest Products -->
-    <div class="content-lg container">
-        <div class="row margin-b-40">
-            <div class="col-sm-6">
-                <h2>Latest Products</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
-            </div>
-        </div>
-        <!--// end row -->
+    {{--<!-- Latest Products -->--}}
+    {{--<div class="content-lg container">--}}
+        {{--<div class="row margin-b-40">--}}
+            {{--<div class="col-sm-6">--}}
+                {{--<h2>Latest Products</h2>--}}
+                {{--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<!--// end row -->--}}
 
-        <div class="row">
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <img class="img-responsive" src="{{asset('img/970x647/01.jpg')}}" alt="Latest Products Image">
-                    </div>
-                </div>
-                <h4><a href="#">Triangle Roof</a> <span class="text-uppercase margin-l-20">Management</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Read More</a>
-            </div>
-            <!-- End Latest Products -->
+        {{--<div class="row">--}}
+            {{--<!-- Latest Products -->--}}
+            {{--<div class="col-sm-4 sm-margin-b-50">--}}
+                {{--<div class="margin-b-20">--}}
+                    {{--<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">--}}
+                        {{--<img class="img-responsive" src="{{asset('img/970x647/01.jpg')}}" alt="Latest Products Image">--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<h4><a href="#">Triangle Roof</a> <span class="text-uppercase margin-l-20">Management</span></h4>--}}
+                {{--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>--}}
+                {{--<a class="link" href="#">Read More</a>--}}
+            {{--</div>--}}
+            {{--<!-- End Latest Products -->--}}
 
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <img class="img-responsive" src="{{asset('img/970x647/02.jpg')}}" alt="Latest Products Image">
-                    </div>
-                </div>
-                <h4><a href="#">Curved Corners</a> <span class="text-uppercase margin-l-20">Developmeny</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Read More</a>
-            </div>
-            <!-- End Latest Products -->
+            {{--<!-- Latest Products -->--}}
+            {{--<div class="col-sm-4 sm-margin-b-50">--}}
+                {{--<div class="margin-b-20">--}}
+                    {{--<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">--}}
+                        {{--<img class="img-responsive" src="{{asset('img/970x647/02.jpg')}}" alt="Latest Products Image">--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<h4><a href="#">Curved Corners</a> <span class="text-uppercase margin-l-20">Developmeny</span></h4>--}}
+                {{--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>--}}
+                {{--<a class="link" href="#">Read More</a>--}}
+            {{--</div>--}}
+            {{--<!-- End Latest Products -->--}}
 
-            <!-- Latest Products -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <div class="margin-b-20">
-                    <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <img class="img-responsive" src="{{asset('img/970x647/03.jpg')}}" alt="Latest Products Image">
-                    </div>
-                </div>
-                <h4><a href="#">Bird On Green</a> <span class="text-uppercase margin-l-20">Design</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <a class="link" href="#">Read More</a>
-            </div>
-            <!-- End Latest Products -->
-        </div>
-        <!--// end row -->
-    </div>
-    <!-- End Latest Products -->
+            {{--<!-- Latest Products -->--}}
+            {{--<div class="col-sm-4 sm-margin-b-50">--}}
+                {{--<div class="margin-b-20">--}}
+                    {{--<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">--}}
+                        {{--<img class="img-responsive" src="{{asset('img/970x647/03.jpg')}}" alt="Latest Products Image">--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<h4><a href="#">Bird On Green</a> <span class="text-uppercase margin-l-20">Design</span></h4>--}}
+                {{--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>--}}
+                {{--<a class="link" href="#">Read More</a>--}}
+            {{--</div>--}}
+            {{--<!-- End Latest Products -->--}}
+        {{--</div>--}}
+        {{--<!--// end row -->--}}
+    {{--</div>--}}
+    {{--<!-- End Latest Products -->--}}
 
     <!-- Testimonials -->
+
     <div class="content-lg container">
         <div class="row">
             <div class="col-sm-9">
@@ -288,23 +289,25 @@
                         <div class="swiper-slide">
                             <blockquote class="blockquote">
                                 <div class="margin-b-20">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
+                                    Kita menggunakan jasa dari Jatayu, 3 kantor, internet stabil dan cepat. Pelayanan Memuaskan!!
                                 </div>
-                                <div class="margin-b-20">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
-                                </div>
-                                <p><span class="fweight-700 color-link">Joh Milner</span>, Metronic Customer</p>
+                                <p><span class="fweight-700 color-link">Varyatama</span>, Jatayu Customer</p>
                             </blockquote>
                         </div>
                         <div class="swiper-slide">
                             <blockquote class="blockquote">
                                 <div class="margin-b-20">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                     Kami menggunakan layanan dari Jatayu lebih dari 5 tahun, selalu memberikan solusi yang bagus. Pelayanan masih oke!
                                 </div>
+                                <p><span class="fweight-700 color-link">Universitas 17 Agustus</span>, Jatayu Customer</p>
+                            </blockquote>
+                        </div>
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote">
                                 <div class="margin-b-20">
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                     Dari segi maintenance dan infrastruktur, luar biasa!
                                 </div>
-                                <p><span class="fweight-700 color-link">Alex Clarson</span>, Metronic Customer</p>
+                                <p><span class="fweight-700 color-link">Galaxy Indah Jaya</span>, Jatayu Customer</p>
                             </blockquote>
                         </div>
                     </div>
@@ -320,120 +323,60 @@
     </div>
     <!-- End Testimonials -->
 
-    <!-- Work -->
-    <div class="bg-color-sky-light overflow-h">
-        <div class="content-lg container">
-            <div class="row margin-b-40">
-                <div class="col-sm-6">
-                    <h2>Showcase</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
-                </div>
-            </div>
-            <!--// end row -->
-
-            <!-- Masonry Grid -->
-            <div class="masonry-grid">
-                <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8">
-                    <!-- Work -->
-                    <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                        <div class="work-overlay">
-                            <img class="full-width img-responsive" src="{{asset('img/800x400/01.jpg')}}" alt="Portfolio Image">
-                        </div>
-                        <div class="work-content">
-                            <h3 class="color-white margin-b-5">Art Of Coding</h3>
-                            <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
-                        </div>
-                        <a class="content-wrapper-link" href="#"></a>
-                    </div>
-                    <!-- End Work -->
-                </div>
-                <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-                    <!-- Work -->
-                    <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-                        <div class="work-overlay">
-                            <img class="full-width img-responsive" src="{{asset('img/397x400/01.jpg')}}" alt="Portfolio Image">
-                        </div>
-                        <div class="work-content">
-                            <h3 class="color-white margin-b-5">Clean Design</h3>
-                            <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
-                        </div>
-                        <a class="content-wrapper-link" href="#"></a>
-                    </div>
-                    <!-- End Work -->
-                </div>
-                <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-                    <!-- Work -->
-                    <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
-                        <div class="work-overlay">
-                            <img class="full-width img-responsive" src="{{asset('img/397x300/01.jpg')}}" alt="Portfolio Image">
-                        </div>
-                        <div class="work-content">
-                            <h3 class="color-white margin-b-5">Clean Design</h3>
-                            <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
-                        </div>
-                        <a class="content-wrapper-link" href="#"></a>
-                    </div>
-                    <!-- End Work -->
-                </div>
-                <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-                    <!-- Work -->
-                    <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".4s">
-                        <div class="work-overlay">
-                            <img class="full-width img-responsive" src="{{asset('img/397x300/02.jpg')}}" alt="Portfolio Image">
-                        </div>
-                        <div class="work-content">
-                            <h3 class="color-white margin-b-5">Clean Design</h3>
-                            <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
-                        </div>
-                        <a class="content-wrapper-link" href="#"></a>
-                    </div>
-                    <!-- End Work -->
-                </div>
-                <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-                    <!-- Work -->
-                    <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".5s">
-                        <div class="work-overlay">
-                            <img class="full-width img-responsive" src="{{asset('img/397x300/03.jpg')}}" alt="Portfolio Image">
-                        </div>
-                        <div class="work-content">
-                            <h3 class="color-white margin-b-5">Clean Design</h3>
-                            <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
-                        </div>
-                        <a class="content-wrapper-link" href="#"></a>
-                    </div>
-                    <!-- End Work -->
-                </div>
-            </div>
-            <!-- End Masonry Grid -->
-        </div>
-    </div>
-    <!-- End Work -->
-
     <!-- Clients -->
     <div class="bg-color-sky-light">
         <div class="content-lg container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center">Our Client</h2>
+                </div>
+            </div>
             <!-- Swiper Clients -->
-            <div class="swiper-slider swiper-clients">
+            <div class="swiper-slider">
                 <!-- Swiper Wrapper -->
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="{{asset('img/clients/01.png')}}" alt="Clients Logo">
+                        <img class="img-responsive" src="{{asset('img/clients/client1.png')}}" alt="Clients Logo">
                     </div>
+                </div>
+                <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="{{asset('img/clients/02.png')}}" alt="Clients Logo">
+                        <img class="img-responsive" src="{{asset('img/clients/client2.png')}}" alt="Clients Logo">
                     </div>
+                </div>
+                <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="{{asset('img/clients/03.png')}}" alt="Clients Logo">
+                        <img class="img-responsive" src="{{asset('img/clients/client3.png')}}" alt="Clients Logo">
                     </div>
+                </div>
+                <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="{{asset('img/clients/04.png')}}" alt="Clients Logo">
+                        <img class="img-responsive" src="{{asset('img/clients/client4.png')}}" alt="Clients Logo">
                     </div>
+                </div>
+                <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="{{asset('img/clients/05.png')}}" alt="Clients Logo">
+                        <img class="img-responsive" src="{{asset('img/clients/client5.png')}}" alt="Clients Logo">
                     </div>
+                </div>
+                <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="swiper-clients-img" src="{{asset('img/clients/06.png')}}" alt="Clients Logo">
+                        <img class="img-responsive" src="{{asset('img/clients/client6.png')}}" alt="Clients Logo">
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="img-responsive" src="{{asset('img/clients/client7.png')}}" alt="Clients Logo">
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="img-responsive" src="{{asset('img/clients/client8.png')}}" alt="Clients Logo">
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="img-responsive" src="{{asset('img/clients/client9.png')}}" alt="Clients Logo">
                     </div>
                 </div>
                 <!-- End Swiper Wrapper -->

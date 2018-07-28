@@ -98,11 +98,11 @@
                 <div class="col-sm-2 sm-margin-b-50 content">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Home</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">About</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Products</a></li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="{{ route('home') }}">Home</a></li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="{{ route('about') }}">About</a></li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="{{ route('portofolio') }}">Portofolio</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Contact</a></li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                     <!-- End List -->
                 </div>
@@ -170,12 +170,11 @@
 
 <!-- PAGE LEVEL SCRIPTS -->
 <script src="{{asset('js/layout.min.js')}}" type="text/javascript"></script>
-<script src="{{asset('js/components/maps.js')}}" type="text/javascript"></script>
+<script src="{{asset('js/components/gmap.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/components/wow.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/components/swiper.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/components/masonry.min.js')}}" type="text/javascript"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDurjpNTU8n1eGaY73QA-SEjIAPOtiaGsQ&callback=initMap"
-        type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDurjpNTU8n1eGaY73QA-SEjIAPOtiaGsQ&amp;callback=initMap" async defer></script>
 </body>
 <!-- END BODY -->
 </html>
