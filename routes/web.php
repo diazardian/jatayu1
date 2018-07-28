@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function (){
-    return redirect()->route('home');
+    return view('home');
 });
 
 Route::get('home', [
@@ -80,3 +80,8 @@ Route::get('dasbor', [
     'uses' => 'TestController@dasbor',
     'as' => 'dasbor.admin'
 ]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+

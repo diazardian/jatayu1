@@ -26,4 +26,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * mendapatkan data berita dari user tertentu
+     * @param bool $queryReturn
+     * @return \Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function getBerita($queryReturn = true)
+    {
+        $data = $this->hasMany('App\Berita', 'user_id');
+        return $queryReturn ? $data : $data->get();
+    }
 }

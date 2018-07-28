@@ -8,33 +8,28 @@
         <div class="container">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                {{--<li data-target="#carousel-example-generic" data-slide-to="1"></li>--}}
+                @php $c = 0 @endphp
+                @foreach(\App\Carousel::all() as $carousel)
+                    <li data-target="#carousel-example-generic" data-slide-to="{{ $c }}" class="@if($c++ == 0 ) active @endif"></li>
+                @endforeach
             </ol>
         </div>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="img-responsive" src="{{ asset('img/1920x1080/00.jpg') }}" alt="Slider Image">
-                <div class="container">
-                    <div class="carousel-centered">
-                        <div class="margin-b-40">
-                            <h1 class="carousel-title"></h1>
+            @php $c = 0 @endphp
+            @foreach(\App\Carousel::all() as $carousel)
+                <div class="item @if($c++ == 0 ) active @endif">
+                    <img class="img-responsive" src="{{ asset('images/carousel/'.$carousel->dir) }}" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h1 class="carousel-title"></h1>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            {{--<div class="item">--}}
-                {{--<img class="img-responsive" src="{{ asset('img/1920x1080/01.jpg') }}" alt="Slider Image">--}}
-                {{--<div class="container">--}}
-                    {{--<div class="carousel-centered">--}}
-                        {{--<div class="margin-b-40">--}}
-                            {{--<h2 class="carousel-title">Jatayu</h2>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+            @endforeach
         </div>
     </div>
         <!--========== SLIDER ==========-->
