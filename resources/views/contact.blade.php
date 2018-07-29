@@ -26,8 +26,8 @@
                 <!-- Contact List -->
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
-                        <h3><a href="#">Surabaya</a> <span class="text-uppercase margin-l-20">Headquarter</span></h3>
-                        <h4>Intiland Tower 9th Floor</h4>
+                        <h2><a href="#">Surabaya</a> <span class="text-uppercase margin-l-20">Headquarter</span></h2>
+                        <h3>Intiland Tower 9th Floor</h3>
                         <p>Panglima Sudirman No.101-103, Surabaya</p>
                         <ul class="list-unstyled contact-list">
                             <li><i class="margin-r-10 color-base icon-call-out"></i> +6231-547-7710</li>
