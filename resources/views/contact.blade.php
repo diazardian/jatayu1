@@ -31,7 +31,7 @@
                         <p>Panglima Sudirman No.101-103, Surabaya</p>
                         <ul class="list-unstyled contact-list">
                             <li><i class="margin-r-10 color-base icon-call-out"></i> +6231-547-7710</li>
-                            <li><i class="margin-r-10 color-base icon-envelope"></i> mail.jatayu.id</li>
+                            <li><i class="margin-r-10 color-base icon-envelope"></i> info@jatayu.id</li>
                         </ul>
                     </div>
                 </div>
@@ -49,7 +49,16 @@
     <!-- End Contact List -->
 
     <!-- Google Map -->
-    <div id="map" class="map height-400"></div>
+
+    <div class=" content-md container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-4"> <iframe width="600" height="450" frameborder="0" style="border:0"
+                                           src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJHa7GOdz71y0R4_LFU0h8ZP4&key=AIzaSyDurjpNTU8n1eGaY73QA-SEjIAPOtiaGsQ" allowfullscreen></iframe></div>
+
+        </div>
+
+    </div>
     <!--========== END PAGE LAYOUT ==========-->
 
     @endsection
